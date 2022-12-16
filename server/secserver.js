@@ -1,10 +1,11 @@
+require("dotenv").config();
 const Fs = require('fs');
 const Https = require('https');
 const WebSocketServer = require('ws').Server;
 
 const httpsServer = Https.createServer({
-  key: Fs.readFileSync('privkey.pem'),
-  cert: Fs.readFileSync('fullchain.pem')
+  key: Fs.readFileSync(process.env.PRIVATEKEY),
+  cert: Fs.readFileSync(process.env.CERT)
 });
 const wss = new WebSocketServer({
   server: httpsServer
