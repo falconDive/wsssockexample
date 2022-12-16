@@ -1,0 +1,27 @@
+{
+  "name": "websockets example",
+  "description": "Websockets",
+  "version": "0.0.1",
+  "author": "Vig vignesh.vderive@gmail.com>",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/falconDive/wsssockexample.git"
+  },
+  "bugs": {
+    "url": "https://github.com/falconDive/wsssockexample.git/issues"
+  },
+  "homepage": "https://github.com/falconDive/wsssockexample.git",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "main": "server/server.js",
+  "license": "vderive",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "dotenv-safe": "^8.2.0",
+    "express": "^4.12.4",
+    "express-rate-limit": "^5.2.3",
+    "ws": "^8.11.0"
+  }
+}
