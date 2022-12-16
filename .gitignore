@@ -130,3 +130,4 @@ dist
 .pnp.*
 fullchain.pem
 privkey.pem
+package-lock.json
